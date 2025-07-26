@@ -68,7 +68,7 @@ export const ProductsGrid = async ({
 
   return (
     <>
-      <div className="mb-12 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
+      <div className="mb-12 grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-4 md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
         <div
           className="relative min-h-44 border-stone-200 bg-cover bg-center p-6"
           style={{
@@ -144,7 +144,7 @@ export const ProductsGrid = async ({
 export const ProductsGridSkeleton = () => {
   return (
     <>
-      <div className="mb-12 grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
+      <div className="mb-12 grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-4 md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
         <div className="relative min-h-44 border-stone-200 bg-stone-200 p-6">
           <Skeleton className="mb-2 h-6 w-1/2" />
           <Skeleton className="mb-4 h-4 w-1/3" />

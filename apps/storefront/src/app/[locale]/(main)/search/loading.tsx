@@ -15,7 +15,7 @@ export default function Loading() {
           </div>
         </div>
 
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-4 md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
           {Array(DEFAULT_RESULTS_PER_PAGE)
             .fill(null)
             .map((_, idx) => (

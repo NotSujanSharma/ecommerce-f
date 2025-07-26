@@ -8,7 +8,7 @@ type Props = {
 
 export const ProductsList = ({ products }: Props) => {
   return (
-    <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
+    <div className="grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-4 md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
       {products.map((product, index) => (
         <SearchProductCard key={`${product.id}-${index}`} product={product} />
       ))}
