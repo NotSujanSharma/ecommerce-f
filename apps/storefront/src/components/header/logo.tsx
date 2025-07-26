@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import BrandLogo from "@/assets/brand-logo-dark.svg";
+import BrandLogo from "@/assets/logo.png";
 import { Link } from "@/i18n/routing";
 import { paths } from "@/lib/paths";
 
@@ -15,7 +16,7 @@ export const Logo = () => {
       title={t("go-to-homepage")}
       aria-label={t("logo")}
     >
-      <BrandLogo height={36} className="fill-primary" />
+      <Image src={BrandLogo} alt={t("logo")} height={36} />
     </Link>
   );
 };
