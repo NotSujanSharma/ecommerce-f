@@ -30,6 +30,8 @@ export default async function Page(props: PageProps) {
     locale,
     step: "delivery-method",
   });
+  console.log(`checkout ${checkout.deliveryMethod?.id}`);
+  console.log(`checkout ${checkout.shippingMethods}`);
 
   return (
     <>

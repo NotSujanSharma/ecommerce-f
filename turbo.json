@@ -3,6 +3,7 @@
   "globalEnv": [
     "NEXT_PUBLIC_STOREFRONT_URL",
     "CMS_SERVICE",
+    "NEXT_PUBLIC_DEFAULT_CHANNEL",
     "EDGE_CONFIG",
     "NEXT_PUBLIC_SALEOR_API_URL",
     "TEST_ENV_URL",
@@ -16,6 +17,7 @@
   ],
   "globalPassThroughEnv": [
     "AUTH_SECRET",
+    "AUTH_URL",
     "LOG_LEVEL",
     "SALEOR_APP_TOKEN",
     "SENTRY_AUTH_TOKEN",
@@ -24,7 +26,9 @@
     "SENTRY_ENVIRONMENT",
     "SENTRY_ORG",
     "SENTRY_PROJECT",
-    "STRIPE_SECRET_KEY"
+    "STRIPE_SECRET_KEY",
+    "NEXT_PUBLIC_STRIPE_PUBLIC_KEY",
+    "NEXT_PUBLIC_PAYMENT_APP_ID"
   ],
   "ui": "stream",
   "tasks": {
