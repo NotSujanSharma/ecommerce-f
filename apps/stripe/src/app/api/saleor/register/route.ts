@@ -37,6 +37,9 @@ export async function POST(request: Request) {
   const saleorAuthToken = body.data.auth_token;
   const saleorDomain = headers.data["saleor-domain"];
 
+  //eslint-disable-next-line no-console
+  console.log(saleorDomain, saleorAuthToken);
+
   const logger = getLoggingProvider();
   const jwksProvider = getJWKSProvider();
   const saleorClient = getSaleorClient({
